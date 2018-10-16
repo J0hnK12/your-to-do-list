@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--    The import to use jQuery so it is defined for app4.js-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 <title>Your To Do List</title>
 <style type = "text/css">
@@ -19,7 +20,7 @@
 <body>
     <h1>Your To Do List</h1>
     <!--    Bullet Points-->
-    <!--    The for loop for creating new bullet points (everytime the user clicks the enter button on the keyboard) are in app4.js-->
+
     <ul>
         <li><input id="myInput" value=" "></li>
         <li><input id="myInput" value=" "></li>
@@ -28,8 +29,9 @@
     
 <!--    Create save button (to save in the data)-->
 <!--    The properties & functions of the save button are in app4.js-->
-<button id="myBtn" onclick="javascript:prompt('Are you sure you want to create a new bullet point?')">New Bullet Point</button>
-<button>Save</button>    
+<button id = "myBtn" onclick = "javascript:alert('Are you sure you want to create a new bullet point?')">New Bullet Point</button>
+<button id = "saveButton">Save</button>    
+
 <script src = "app4.js">
 var input = document.getElementById("myInput");
 input.addEventListener("keyup", function(event) {
@@ -38,6 +40,7 @@ input.addEventListener("keyup", function(event) {
         document.getElementById("myBtn").click();
     }
 });
+
 </script>
 </body>
 </html>
