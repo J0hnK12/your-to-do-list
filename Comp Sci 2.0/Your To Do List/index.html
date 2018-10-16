@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 <title>Your To Do List</title>
 <style type = "text/css">
     body {
@@ -17,18 +18,26 @@
 </head>
 <body>
     <h1>Your To Do List</h1>
-    
+    <!--    Bullet Points-->
+    <!--    The for loop for creating new bullet points (everytime the user clicks the enter button on the keyboard) are in app4.js-->
     <ul>
-        <li><input></li>
-        <li><input></li>
-        <li><input></li>
+        <li><input id="myInput" value=" "></li>
+        <li><input id="myInput" value=" "></li>
+        <li><input id="myInput" value=" "></li>
     </ul>
     
 <!--    Create save button (to save in the data)-->
-    <button>Save</button>
-    
+<!--    The properties & functions of the save button are in app4.js-->
+<button id="myBtn" onclick="javascript:prompt('Are you sure you want to create a new bullet point?')">New Bullet Point</button>
+<button>Save</button>    
 <script src = "app4.js">
-
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("myBtn").click();
+    }
+});
 </script>
 </body>
 </html>
