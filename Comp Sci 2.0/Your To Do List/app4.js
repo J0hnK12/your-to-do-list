@@ -25,18 +25,21 @@ $(document).ready(function() {
     
     
     //Get information from input box & put into data object in code (Use arrays)
-    let nombre = $("input#text").val();
+    let nombre = $("myInput").val();
     
     //Pulls or retrieves data from the browser & puts into text boxes
-    $("p#response").text(nombre);
+    $("myInput").text(nombre);
     
     //Save data
     localStorage.setItem("personData", person1);
     localStorage.getItem("personData");
     
-    //Add click event listener to the button (Use a for loop here because this happens everytime the user clicks the save button)
+    //Add click event listener to Create New Bullet Point button
     
     
-    //jQuery on the alert yes or no, if yes, add new bullet point, else (no), don't create bullet point
+    //Add click event listener to Save button
+    
+    
+    //jQuery on the alert "Okay" (yes) or "Cancel" (no), if the user clicks the okay button, add new bullet point. However, if the user clicks the cancel button, don't create bullet point
     
 });
