@@ -35,10 +35,14 @@ $(document).ready(function() {
     localStorage.getItem("personData");
     
     //Add click event listener to Create New Bullet Point button
-    
+    for (var i = 0; i < 10; i++) {
+        
+    }
     
     //Add click event listener to Save button
-    
+    for (var i = 0; i < 10; i++) {
+        
+    }
     
     //jQuery on the alert "Okay" (yes) or "Cancel" (no), if the user clicks the okay button, add new bullet point. However, if the user clicks the cancel button, don't create bullet point
     
