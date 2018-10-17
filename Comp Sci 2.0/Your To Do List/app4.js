@@ -45,5 +45,11 @@ $(document).ready(function() {
     }
     
     //jQuery on the alert "Okay" (yes) or "Cancel" (no), if the user clicks the okay button, add new bullet point. However, if the user clicks the cancel button, don't create bullet point
-    
+    if () {
+        
+    }
+        
+    else() {
+        
+    }
 });
