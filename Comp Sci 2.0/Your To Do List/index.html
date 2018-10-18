@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--    The import to use jQuery so it is defined for app4.js-->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    
+<!--The import to use jQuery so it is defined for app4.js-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+
 <title>Your To Do List</title>
+
+<!--Changing the style of the page-->
 <style type = "text/css">
     body {
         background-color: white;
@@ -18,31 +22,33 @@
     }
 	
 </style>
-</head>
-<body>
-    <h1>Your To Do List</h1>
-    <!--    Bullet Points-->
 
-    <ul>
-        <li><input id="myInput"></li>
-        <li><input id="myInput"></li>
-        <li><input id="myInput"></li>
-    </ul>
+</head>
+
+<body>
+
+<h1>Your To Do List</h1>
     
-    <!--    Save button saves the data-->
-    <!--    New Bullet Point button creates a new bullet point-->
-<button id = "myBtn" onclick = "myFunction()">New Bullet Point</button>
+<!--Bullet Points-->
+<ul>
+    <li><input id="myInput"></li>
+    <li><input id="myInput"></li>
+    <li><input id="myInput"></li>
+</ul>
     
-    <script>
-        function myFunction() {
-            confirm("Are you sure you want to add another bullet point?");
-        }
-    </script>
+<!--Save button saves the data-->
+<button id = "saveButton">Save</button>
     
-<button id = "saveButton">Save</button>    
+<!--New Bullet Point button creates a new bullet point-->
+<button id = "myBtn">New Bullet Point</button>
+    
+<script>
+
+
+</script>   
 
 <script src = "app4.js">
-var input = document.getElementById("myInput");
+var myInput = document.getElementById("myInput");
 input.addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode === 13) {
