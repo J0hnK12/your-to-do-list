@@ -15,6 +15,4 @@ $(document).ready(function() {
         localStorage.getItem("#myInput");
     }
     
-    //If and else statement for the buttons in the alert saying "Okay" (yes) or "Cancel" (no), if the user clicks the okay button, add new bullet point. However, if the user clicks the cancel button, don't create bullet point
-    
 });
