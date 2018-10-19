@@ -11,8 +11,10 @@ $(document).ready(function() {
     
     //Add click event listener to Save button
     for (var i = 0; i < 10; i++) {
-        localStorage.setItem("#myInput", input1);
-        localStorage.getItem("#myInput");
-    }
+        $('#myBtn').click(function() {
+            localStorage.setItem("#myInput", input);
+            localStorage.getItem("#myInput");
+        }
+    });
     
 });
